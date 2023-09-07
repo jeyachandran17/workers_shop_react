@@ -1,0 +1,44 @@
+.application{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navigation-container{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    gap: 10px;
+    background-image:linear-gradient(to top right,white,gray);
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    align-items: center;
+}
+
+#logo{
+    height: 40px;
+    width: 50px;
+}
+
+.nav-title{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.categories{
+    padding: 5px;
+    text-align: center;
+}
+
+.search-bar{
+    display: flex;
+}
+
+.search{
+    padding: 5px;
+}

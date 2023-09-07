@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import logo from '../images/logo.png'
 
 function App() {
   return (
@@ -14,9 +15,40 @@ function App() {
 function Application() {
   return (
     <div className="application">
-      start to create application
+      <div className="navigationBar">
+        <NavigationBar />
+      </div>
     </div>
   );
 }
+
+function NavigationBar() {
+  return (
+    <div className="navigation-container">
+      <div className="logo-container">
+        <img src={logo} alt="logo" id='logo' />
+        <label htmlFor="logo">Worker's Shop</label>
+      </div>
+      <div className="nav-title">
+        <div className="categories-container">
+          <select className='categories'>
+            <option value="" defaultChecked>Categories</option>
+            <option value="all categories">All Categories</option>
+            <option value="foodstuffs">Foodstuffs</option>
+            <option value="dress">Dress</option>
+            <option value="electronice">Electronice</option>
+          </select>
+        </div>
+        <div className="search-engine">
+          <form action="" className="search-bar">
+	          <input type="text" className="search" required />
+	          <button className="search-btn" type="submit"><span>Search</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 
 export default App
