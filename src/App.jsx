@@ -16,7 +16,7 @@ function Application() {
   return (
     <div className="application">
       <div className="navigationBar">
-        <NavigationBar />
+        <AllCategories />
       </div>
     </div>
   );
@@ -50,5 +50,14 @@ function NavigationBar() {
   );
 }
 
+function AllCategories() {
+  return (
+    <div className="allcategories">
+      <div className="navigation">
+        <NavigationBar />
+      </div>
+    </div>
+  );
+}
 
 export default App
