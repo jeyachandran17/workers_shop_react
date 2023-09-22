@@ -42,3 +42,10 @@
 .search{
     padding: 5px;
 }
+
+.title-container{
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}

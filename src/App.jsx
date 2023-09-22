@@ -56,6 +56,9 @@ function AllCategories() {
       <div className="navigation">
         <NavigationBar />
       </div>
+      <div className="title-container">
+        <h3>All Categories</h3>
+      </div>
     </div>
   );
 }
